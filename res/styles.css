@@ -54,11 +54,13 @@ section {
   display: block;
   text-align: center;
   margin: 0 auto;
+  margin-top: 50px;
   margin-bottom: 50px;
   padding: 20px;
   border: 5px solid #fff;
   background-color: rgba(0, 0, 0, 0.2);
   max-width: fit-content;
+  backdrop-filter: blur(10px) saturate(70%);
 }
 
 .user-signup__submit {
@@ -257,8 +259,8 @@ h1 {
     font-size: 75px;
   }
   .user-signup__form {
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 }
 
