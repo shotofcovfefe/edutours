@@ -236,3 +236,9 @@ h1 {
   }
 }
 
+
+@media (max-width: 768px) {
+  .user-signup__intro h1 {
+    margin-top: 50px; /* Adjust this value as needed */
+  }
+}
