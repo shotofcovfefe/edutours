@@ -45,14 +45,6 @@
                     </p>
                   </div>
                 </div>
-
-                <!-- <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeoyY4hhjWoiuK7UvrgWrLEN5s83CtKUSfKZ4mCpSrrap2wEA/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
-                  Email:<br>
-                  <input type="text" name="entry.953687996" id="entry.953687996"><br>
-                  <input type="submit" value="Submit">
-                </form>
-                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe> -->
-
                 <div class="row">
 
                   <form name="gform" id="gform" class="form form-horizontal user-signup__form" action="https://docs.google.com/forms/d/e/1FAIpQLSeoyY4hhjWoiuK7UvrgWrLEN5s83CtKUSfKZ4mCpSrrap2wEA/formResponse?" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
@@ -70,28 +62,6 @@
                     </div>
                 </form>
                 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-
-                  <!-- <form class="form form-horizontal user-signup__form" name="form" 
-                    action="https://data.endpoint.space/clv6sfczc000308lhaqyo4th9"
-                    method="POST"       
-                  > -->
-                  
-                  <!-- <form class="form form-horizontal user-signup__form" name="form" action="https://formsubmit.co/edutoursde@gmail.com" method="POST">
-                    <div class="mt-table--full">
-                      <div class="mt-td--centered-vertical user-signup__col-1">
-                        <div class="user-signup__form-group m-lg-v form-group col-sm-12">
-                          <input type="hidden" name="_captcha" value="false">
-                          <input type="hidden" name="_next" value="https://shotofcovfefe.github.io/edutours/thanks.html">
-                          <input type="email" name="email" class="form-control form-control__input user-signup__email" placeholder="Enter your email for updates" required>
-                        </div>        
-                      </div>
-                      <div class="mt-td--centered-vertical user-signup__col-2">
-                        <div class="user-signup__form-group m-lg-v form-group text-center">
-                          <button type="submit" class="btn btn-default submit user-signup__submit"><span>Notify Me</span></button>
-                        </div>
-                      </div>
-                    </div>
-                  </form> -->
                 </div>
               </div>
             </div>
@@ -102,13 +72,21 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
+          var formSubmitted = false;
+  
           $('#gform').on('submit', function(e) {
-              e.preventDefault();
-              $('#gform').fadeOut(2000, function() {
-                  if ($('#submission-message').length === 0) {
-                      $('#gform').after('<div style="text-align: center; text-shadow: white 0px 0px 10px;">Success! 😎 You\'ll hear from us soon!</div>');
-                  }
-              });
+              if (!formSubmitted) {
+                  e.preventDefault(); 
+  
+                  $('#gform').fadeOut(2000, function() {
+                      if ($('#submission-message').length === 0) {
+                          $(this).after('<div id="submission-message" style="text-align: center; text-shadow: green 0px 0px 10px;">Success! 😎 You\'ll hear from us soon!</div>');
+                      }
+                      
+                      formSubmitted = true; 
+                      $('#gform').trigger('submit'); 
+                  });
+              }
           });
       });
   </script>
