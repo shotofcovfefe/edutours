@@ -31,13 +31,18 @@
               <div class="container-fluid rel">
                 <div class="row">
                   <div class="user-signup__intro">
-                    <h1 class="edutours-heading" style="text-align: center;">EduTours 🏗️</h1>
+                    <h3 class="edutours-heading" style="text-align: center;">Bildungsreisen mit <i>EduTours</i></h1>
                     <p style="text-align: center;">
                       <img src="res/spacer.png" alt="" class="spacer insert--image wrap-off-align-center"><br>
                     </p>
-                    <p style="text-align: center;">You're entitled to 5 days of <i>educational leave</i> each year to explore new skills and self-care.</p>
-                    <p style="text-align: center;">We plan it, produce the certification, and you show up. Simple.</p>
-                    <p style="text-align: center;">
+                    <p style="text-align: center;"><b>5 Tage mehr Urlaub im Jahr für individuelle Weiterentwicklung und Wachstum.</b></p>
+                    <p style="text-align: center;font-size:15px;">In den meisten Bundesländern Deutschlands hast du das Recht auf Bildungsurlaub - das sind 5 extra Tage Urlaub, in denen du dich weiterbilden kannst. Dein Arbeitgeber muss diese Urlaube meistens genehmigen.</p>
+                    <p style="text-align: center;"><b>Was wir machen</b></p> 
+                    <p style="text-align: center;font-size:15px;">Wir bei EduTours bieten verschiedene Bildungsreisen an. Zum Beispiel ein Yoga Retreat, das deine Resilienz steigert, oder einen Aktivurlaub, der dir lehrt, wie du gut mit Stress umgehst. 
+                      Das bringt dir nicht nur Spaß und Wachstum, sondern auch neue Skills, die du im Alltag anwenden kannst. 
+                      Das besondere: du musst dich dabei um nichts kümmern, als den Urlaub bei deinem Arbeitgeber zu beantragen und einen Weg zu finden zum Veranstaltungsort zu kommen. Den Rest erledigen wir. Am Ende erhältst du ein Zertifikat, für dich und deinen Arbeitgeber.
+                      </p>
+                    <p style="text-align: center;font-size:15px;">
                       <img src="res/clean-hr.png" alt="" class="clean-hr insert--image wrap-off-align-center">
                     </p>
                   </div>
@@ -74,7 +79,6 @@
           $('#gform').on('submit', function(e) {
               if (!formSubmitted) {
                   e.preventDefault(); 
-  
                   $('#gform').fadeOut(2000, function() {
                       if ($('#submission-message').length === 0) {
                           $(this).after('<div id="submission-message" style="text-align: center;"><b>Success! 😎</b></div>');
