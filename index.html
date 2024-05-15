@@ -118,6 +118,109 @@
 }
 
 
+.button-container {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Media query to hide the button if screen width is 600px or less */
+@media (max-width: 600px) {
+    .button-container {
+        display: none;
+    }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+.button-29 {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5E7752 0, #46593d 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  font-family: 'League Spartan'; 
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.button-29:focus {
+  box-shadow: #DAE3D6 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #DAE3D6 0 -3px 0 inset;
+}
+
+.button-29:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #DAE3D6 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-29:active {
+  box-shadow: #DAE3D6 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.footer {
+    background-color: #5E7752;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
 
 </style>
 </head>
@@ -127,6 +230,12 @@
 </header>
 <p style="font-family: 'Sanchez'; font-size: 20px;">Next step by step</p>
 <p style="font-family: 'League Spartan'; text-align: center; margin-top: 30px; margin-bottom: 20px;font-size: 30px;"><strong>Bildungsreisen mit EduTours</strong></p>
+
+<div class="button-container">
+  <!-- <a href="#targetSection" id="toggleButton" class="button">Hier anfragen</a> -->
+  <a href="#targetSection" id="toggleButton" class="button-29" role="button">Hier anfragen</a>
+</div>
+
 
 <div class="content" style="max-width: 1100px; padding-top: 8vh; margin: 20px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;">
   <div class="text-intro-section" style="flex: 1;">
@@ -140,7 +249,7 @@
 
 <div class="about">
   <div class="image-about-section" style="align-items: center;">
-    <img src="res/spacing-logo.png" alt="Spacing logo" style="max-width: 100px;margin: auto;margin-top: 14vh;">
+    <img src="res/spacing-logo.png" alt="Spacing logo" style="max-width: 100px;margin: auto;margin-top: 5vh;">
   </div>
   <div class="text-about-section" style="text-align: center;max-width: 1100px; ">
     <p style="font-family: 'League Spartan';font-size: 30px;margin-top: 3vh;"><strong>Was wir machen</strong></p>
@@ -155,7 +264,7 @@
   <p style="font-family: 'League Spartan';font-size: 30px;margin-top: 5vh;text-align: center;"><strong>Ab September 2024 geht es los!</strong></p>
 </div>
 
-<div class="content" style="max-width: 1100px; padding-top: 15vh; margin: 20px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;">
+<div class="content" style="max-width: 1100px; padding-top: 5vh; margin: 20px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;">
   <div class="image-intro-section" style="flex: 1;">
     <img src="res/yoga.avif" alt="Yoga poses">
   </div>
@@ -166,12 +275,12 @@
   </div>
 </div>
 
-<!-- <div class="contact-section" style="max-width: 1100px; padding: 8vh 20px; display: flex; flex-direction: row; justify-content: space-between; align-items: center;"> -->
-  <div class="contact-section" style="max-width: 1100px; padding-bottom: 30vh;padding-top: 15vh; margin: 20px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;">
+
+  <div class="contact-section" style="max-width: 1100px; padding-bottom: 15vh;padding-top: 5vh; margin: 20px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;">
       
-    <div class="form-contact" style="flex: 1;">
+    <div id="targetSection" class="form-contact" style="flex: 1;">
       <p style="font-family: 'League Spartan';font-size: 30px;"><strong>Noch Fragen</strong></p>
-      <p style="font-family: 'Sanchez';font-size: 20px;">Melde Dich gerne über das Kontaktformular oder schreibe und unter: <i>hey@edu-tours.de</i></p>
+      <p style="font-family: 'Sanchez';font-size: 20px;">Melde Dich gerne über das Kontaktformular oder schreibe uns unter: <i>hey@edu-tours.de</i></p>
         <form name="gform" id="gform" action="https://docs.google.com/forms/d/e/1FAIpQLSdR2pMxv6C2tj0WJtJmzU4F-IiTYUoJsepf3OyTRDGUOK0tUQ/formResponse?" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
         <input type="text" name="entry.1207354318" placeholder="Name*" style="width: 100%; padding: 10px; margin: 8px 0;" required>
         <input type="email" name="entry.1916840217" placeholder="E-Mail Adresse*" style="width: 100%; padding: 10px; margin: 8px 0;" required>
@@ -185,6 +294,18 @@
       <img src="res/kayak.avif" alt="Kayaking" style="max-width: 100%; height: auto;max-width: 400px;">
     </div>
   </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+        <span>©2024, EducAid e.V.</span>
+        <div class="footer-links">
+            <a href="agb.html">AGB</a>
+            <a href="datenschutz.html">Datenschutzerklärung</a>
+            <a href="impressum.html">Impressum</a>
+        </div>
+    </div>
+</footer>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script type="text/javascript">
   $(document).ready(function() {
