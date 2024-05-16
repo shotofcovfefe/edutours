@@ -17,83 +17,96 @@ header img {
 }
 
 @media (max-width: 1404px) {
-.content {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+  .content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media (max-width: 768px) {
-.text-intro-section, .image-intro-section {
-  max-width: 100%;
-  margin: 0 auto;
-}
+  .text-intro-section, .image-intro-section {
+    max-width: 100%;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 1404px) {
-.text-intro-section {
-  max-width: 700px;
-}
+  .text-intro-section {
+    max-width: 700px;
+  }
 }
 @media (max-width: 1404px) {
-.image-intro-section {
-  margin-top: 10vh;
-  max-width: 700px;
-}
-}
-
-@media (min-width: 1405px) {
-.text-intro-section {
-  margin-right: 50px;
-}
+  .image-intro-section {
+    margin-top: 10vh;
+    max-width: 700px;
+  }
 }
 
 @media (min-width: 1405px) {
-.image-intro-section {
-  margin-right: 50px;
+  .text-intro-section {
+    margin-right: 50px;
+  }
 }
+
+@media (min-width: 1405px) {
+  .image-intro-section {
+    margin-right: 50px;
+  }
+}
+
+.image-about-section {
+  max-width: 500px;
+  margin: auto;
+  margin-top: 5vh;
+}
+
+@media (max-width: 768px) {
+  .image-about-section {
+    max-width: 80%;
+    margin: auto;
+  }
 }
 
 
 @media (max-width: 768px) {
-.text-about-section {
-  width: 90%;
-  margin-left: auto;
-}
+  .text-about-section {
+    width: 90%;
+    margin-left: auto;
+  }
 }
 
 
 @media (max-width: 1404px) {
+  .form-contact {
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 1405px) {
 .form-contact {
+  margin-right: 50px;
   max-width: 500px;
 }
 }
 
-@media (min-width: 1405px) {
-.form-contact {
-  margin-right: 50px;
-  max-width: 500px;
-}
+@media (max-width: 1404px) {
+  .image-contact {
+    margin-top: 10vh;
+    max-width: 700px;
+  }
 }
 
 @media (max-width: 1404px) {
-.image-contact {
-  margin-top: 10vh;
-  max-width: 700px;
-}
-}
-
-@media (max-width: 1404px) {
-.contact-section {
-  flex-direction: column; /* Stack the form and image vertically */
-}
+  .contact-section {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 1404px) {
-.text-stacked-below-image {
-  margin-top: 4vh;
-}
+  .text-stacked-below-image {
+    margin-top: 4vh;
+  }
 }
 
 
@@ -261,37 +274,37 @@ font-size: 17px;
 
 
 .tick-section {
-max-width: 800px;
-margin: 0 auto;
-padding: 20px;
-text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
 }
 
 .tick-container {
-margin-top: 3vh;
-display: flex;
-flex-wrap: wrap;
-justify-content: center; /* Ensure even spacing between items */
-gap: 20px; /* Gap between items */
+  margin-top: 3vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Ensure even spacing between items */
+  gap: 20px; /* Gap between items */
 }
 
 .tick-item {
-display: flex;
-align-items: center;
-gap: 10px;
-box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-sizing: border-box;
 }
 
 .tick-item img {
-width: 24px;
-height: 24px;
+  width: 24px;
+  height: 24px;
 }
 
 .tick-item p {
-margin: 0;
-font-family: 'Sanchez';
-color: #46593d;
-text-align: left; 
+  margin: 0;
+  font-family: 'Sanchez';
+  color: #46593d;
+  text-align: left; 
 }
 
 /* Media query to stack items on smaller screens */
